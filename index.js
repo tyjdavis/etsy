@@ -27,19 +27,25 @@ console.log("2. The array is", shirtCount);
 
 
 let gbpItem = items.filter(object => object.currency_code === "GBP")
-.map(function (item) {return [item.title, item.price]})
+.map(function (item) {return [item.title, item.price]});
 
 console.log("3. The item is", gbpItem);
 
 
 //#4
 
+let woodItems = items.filter(object => object.materials[0] === "wood")
+.map(function (item) {return item.title});
 
-console.log("4. Here is the list", fooFunction());
+console.log("4. Here is the list", woodItems);
 
 
+//#5
 
-//console.log("5. The items are", fooFunction());
+let eightOrMoreItems = items.filter(object => object.materials[0] === "wood")
+.map(function (item) {return item.title});
+
+console.log("5. The items are", eightOrMoreItems);
 
 
 //console.log("6. This many items were made by their seller", fooFunction());
