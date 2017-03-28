@@ -1,4 +1,4 @@
-let items = require('./index.js');
+let items = require('./data.js');
 
 //#1
 
