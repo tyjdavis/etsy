@@ -1,0 +1,6 @@
+1. The average Price is $ 23.63
+2. The array is [ '1970s Coors Banquet Glass Beer Pitcher',
+  '1970s Schlitz Malt Liquor Glass Beer Pitcher',
+  'The Three Broomsticks Customizable Beer Stein Mug, Harry Potter Inspired, hogsmeade village, harry potter gift, three broomsticks mug',
+  'Hand Painted Colorful Feather Glass',
+  'Groomsman Gifts - Bottle Opener Credit Card Sized PERSONALIZED - FREE SHIPPING' ]
