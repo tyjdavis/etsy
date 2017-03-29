@@ -1,6 +1,8 @@
 let items = require('./data.js');
 
+
 //#1
+
 
 function averagePrice () {
   let prices = items.map(function (item) {return item.price;});
@@ -47,10 +49,10 @@ console.log("4. Here is the list", woodItems);
 //#5
 
 
-let eightOrMoreItems = items.filter(object => object.materials.length >= 8])
+/*let eightOrMoreItems = items.filter(object => object.materials.length >= 8)
 .map(function (item) {return [item.title, item.materials.length, item.materials]});
 
-console.log("5. The items are", eightOrMoreItems);
+console.log("5. The items are", eightOrMoreItems); */
 
 
 //#6
