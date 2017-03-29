@@ -34,7 +34,11 @@ console.log("3. The item is", gbpItem);
 
 //#4
 
-let woodItems = items.filter(object => object.materials[0] === "wood")
+
+let woodItems = items.filter(object => object.materials[0] === "wood" ||
+object.materials[1] === "wood" || object.materials[2] === "wood" ||
+object.materials[3] === "wood" || object.materials[4] === "wood" ||
+object.materials[5] === "wood")
 .map(function (item) {return item.title});
 
 console.log("4. Here is the list", woodItems);
@@ -42,10 +46,16 @@ console.log("4. Here is the list", woodItems);
 
 //#5
 
-let eightOrMoreItems = items.filter(object => object.materials[0] === "wood")
-.map(function (item) {return item.title});
+
+let eightOrMoreItems = items.filter(object => object.materials.length >= 8])
+.map(function (item) {return [item.title, item.materials.length, item.materials]});
 
 console.log("5. The items are", eightOrMoreItems);
 
 
-//console.log("6. This many items were made by their seller", fooFunction());
+//#6
+
+
+let sellerItems = items.filter(object => object.who_made === "i_did")
+
+console.log("6. This many items were made by their seller:", sellerItems.length);
